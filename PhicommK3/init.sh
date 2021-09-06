@@ -20,9 +20,6 @@ echo '添加passwall和bypass软件源'
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 cat feeds.conf.default
 echo '====================Add feed source OK!===================='
-echo '添加#openclash出国软件'
-sed -i '$a src-git helloworld https://github.com/vernesong/OpenClash.git package/diy/luci-app-openclash' feeds.conf.default
-cat feeds.conf.default
 
 echo '添加jerrykuku的argon-mod主题'
 rm -rf package/lean/luci-theme-argon  
